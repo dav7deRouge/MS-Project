@@ -3,6 +3,8 @@ import torch.nn.functional
 from torch.utils.data import Dataset, DataLoader, TensorDataset
 from tqdm import tqdm
 
+# These functions will be used to compute the accuracy and loss on the input batch.
+
 def compute_accuracy(model, dataloader):
   correct = 0.0
   n_data = len(dataloader.dataset)
